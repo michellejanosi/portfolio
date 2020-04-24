@@ -14,6 +14,10 @@ html {
   color: #000;
 }
 
+p {
+  font-size: 1.15rem;
+}
+
 ul, nav {
   list-style: none;
 }
@@ -29,6 +33,13 @@ a:hover {
   opacity: 1;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 90px 120px;
+}
+
 /* header styles */
 header {
   position: fixed;
@@ -37,10 +48,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 100px;
+  padding: 30px 200px;
   animation: 1s fadein 0.5s forwards;
   opacity: 0;
-  color: #000;
 }
 
 @keyframes fadein {
@@ -63,7 +73,7 @@ header nav li {
   font-size: 0.77rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   header {
     padding: 20px 50px;
     flex-direction: column;
@@ -72,4 +82,27 @@ header nav li {
   header h2 {
     margin-bottom: 15px;
   }
+}
+
+/* intro styles*/
+.intro {
+  background-color: #f6e8e5;
+  justify-content: left;
+  text-align: left;
+  min-height: 70vh;
+}
+
+.intro div {
+  max-width: 900px;
+  padding: 110px 80px;
+}
+
+.intro h1 {
+  font-size: 2.1rem;
+  padding-bottom: 20px;
+}
+
+.fa-angle-down {
+  font-size: 4rem;
+  padding-left: 80px;
 }
