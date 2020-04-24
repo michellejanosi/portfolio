@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:200,400&display=swap');
+
+/* base styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,3 +8,68 @@
   scroll-behavior: smooth;
 }
 
+html {
+  font: normal 16px Nunito, sans-serif;
+  font-weight: 200;
+  color: #000;
+}
+
+ul, nav {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: #000;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+/* header styles */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #f6e8e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px;
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
+  color: #000;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+header h2 {
+  font-size: 0.83rem;
+}
+
+header nav {
+  display: flex;
+  margin-right: -15px;
+}
+
+header nav li {
+  margin: 0 15px;
+  font-size: 0.77rem;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+  }
+
+  header h2 {
+    margin-bottom: 15px;
+  }
+}
