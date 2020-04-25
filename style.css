@@ -37,7 +37,7 @@ a {
 section {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  justify-content: flex-start;
   /* padding: 90px 120px; */
 }
 
@@ -96,7 +96,7 @@ header nav li {
 }
 
 .intro div {
-  max-width: 900px;
+  max-width: 850px;
   padding: 110px 80px;
 }
 
@@ -110,9 +110,24 @@ header nav li {
   padding-left: 80px;
 }
 
+@media (max-width: 900px) {
+  .intro {
+    padding: 20px 30px;
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+}
+
 /*portfolio section styles*/
+#portfolio p {
+  width: 50%;
+}
+
 .portfolio-1, .portfolio-2, .portfolio-3 {
-  text-align: left;
   padding: 90px 120px;
   width: 100%;
   background-size: cover;
@@ -132,13 +147,14 @@ header nav li {
 }
 
 /* about section styles */
-img {
+.profile-pic {
   float: left;
   width: 200px;
 }
 
 /* footer styles */
 footer {
+  position: relative;
   background-color: #333;
   color: #fff;
 }
@@ -147,7 +163,7 @@ footer div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 100px;
+  padding: 40px 110px 40px 100px;
 }
 
 footer p {
@@ -163,3 +179,27 @@ footer a {
   padding-left: 5px;
 }
 
+.fa-angle-up {
+  position: absolute;
+  bottom: 37%;
+  right: 20px;
+  font-size: 2rem;
+}
+
+.coffee {
+  width: fit-content;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+@media (max-width: 900px) {
+  footer div {
+    padding: 20px 80px;
+    flex-direction: column;
+  }
+
+  .footer-left {
+    margin-bottom: 10px;
+  }
+}
+}

@@ -15,8 +15,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h2><a href="#">Michelle Janosi &mdash; Software Developer</a></h2>
+  <a name="top"></a>
+  <header id="home">
+    <h2><a href="/">Michelle Janosi &mdash; Software Developer</a></h2>
     <nav>
       <li><a href="#about">About</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
@@ -28,7 +29,7 @@
     <section class="intro">
       <div>
         <h1>I build things for the web</h1>
-        <p>I'm a software developer based in Akron, OH specializing in building aesthetic websites, applications, and everything in between.</p>
+        <p>I'm a software developer based in Cleveland/Akron, OH specializing in building aesthetic websites, applications, and everything in between.</p>
       </div>
       <i class="fa fa-angle-down"></i>
     </section>
@@ -36,11 +37,13 @@
     <!--portfolio section: title, description, tools used, screen, repo, & link to live-->
     <section id="portfolio">
       <div class="portfolio-1">
-        <h3>Bookmark</h3>
-        <p class="project-description">This project required me to build a fully     responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.</p>
-        <p class="tools-used">HTML / CSS / JS</p>
-        <a href="#" class="btn">Github repo</a>
-        <a href="#" class="btn">Visit website</a>
+        <div>
+          <h3>Bookmark</h3>
+          <p class="project-description">This project required me to build a fully     responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.</p>
+          <p class="tools-used">HTML / CSS / JS</p>
+          <a href="#" class="btn">Github repo</a>
+          <a href="#" class="btn">Visit website</a>
+        </div>
       </div>
       <div class="portfolio-2">
         <h3>Insure</h3>
@@ -60,7 +63,7 @@
 
     <!--about me section: demonstrate passion, desire to work on team, etc., & services-->
     <section id="about">
-      <img src="img/profile-pic.png" alt="Profile pic of Michelle">
+      <img src="img/profile-pic.png" class="profile-pic" alt="Profile pic of Michelle">
       <p class="about-me">Hey, I’m Michelle, a Software developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to 
       whatever tools are required. I’m based in Akron/Cleveland, OH, but I’m happy working remotely or relocating to your area. When I’m not coding, you’ll find me outdoors. 
       I love being out in nature whether that’s going for a hike, or biking the trails. I’d love for you to check out my work.</p>
@@ -69,10 +72,10 @@
   <footer id="contact">
     <!--contact section: email, github, & linkedin-->
     <div>
-      <p class="footer-left">Let's collaborate! &mdash; <a href="mailto:hello@michellejano.si?Subject=Hello!">hello@michellejano.si</a> <i class="fa fa-github"></i> <i class="fa fa-linkedin"></i></p>
-      <p class="footer-right">&copy; Michelle Janosi, 2020</p>
+      <p class="footer-left">Let's collaborate! &mdash; <a href="mailto:hello@michellejano.si?Subject=Hello!">hello@michellejano.si</a> <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a> <a href="https://www.linkedin.com/in/michellejanosi/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+      <p class="footer-right">&copy; Michelle Janosi, 2020 <span class="coffee"><img src="img/favicon.ico" alt="8-bit coffee pic"></span></p>
     </div>
-    <!-- <i class="fa fa-angle-up"></i> -->
+    <a href="#top"><i class="fa fa-angle-up"></i></a>
   </footer>
 
   <script src="script.js"></script>
