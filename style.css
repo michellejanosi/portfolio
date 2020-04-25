@@ -121,19 +121,29 @@ header nav li {
 
 @media (max-width: 900px) {
   .intro {
-    padding: 20px 30px;
+    padding: 20px 0;
     flex-direction: column;
   }
 
-  header h1 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+  .intro div {
+    padding: 110px 60px;
+  }
+
+  .intro h1 {
+    font-size: 1.57rem;
+    margin-bottom: 10px;
   }
 }
 
 /*portfolio section styles*/
+#portfolio h3 {
+  font-size: 1.75rem;
+  padding-bottom: 20px;
+}
+
 #portfolio p {
   width: 50%;
+  padding-bottom: 20px;
 }
 
 .portfolio-1, .portfolio-2, .portfolio-3 {
@@ -148,11 +158,70 @@ header nav li {
 }
 
 .portfolio-2 {
+  background-color: #f6e8e5;
   background-image: url('img/insure.png');
 }
 
 .portfolio-3 {
   background-image: url('img/manage.png');
+}
+
+.portfolio-1 .btn, .portfolio-3 .btn {
+  -webkit-font-smoothing: antialiased;
+  border: none;
+  background-color: #f6e8e5;
+  color: #333;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  font-size: .75rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+}
+
+.portfolio-1 .btn:hover, .portfolio-2 .btn:hover, .portfolio-3 .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.portfolio-2 .btn {
+  -webkit-font-smoothing: antialiased;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  font-size: .75rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+}
+
+a.btn {
+  margin-right: 1em;
+}
+
+.buttons {
+  padding-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .portfolio-1, .portfolio-2, .portfolio-3 {
+    padding: 80px 30px 0 30px;
+    width: 100%;
+    height: 60vh;
+  }
+
+  #portfolio p {
+    width: 65%;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  #portfolio p {
+    width: 400px;
+    margin-right: 20px;
+    padding-bottom: 15px;
+  }
 }
 
 /* about section styles */
