@@ -91,8 +91,8 @@ header nav li {
   background-color: #f6e8e5;
   justify-content: left;
   text-align: left;
-  min-height: 70vh;
-  padding: 90px 120px;
+  min-height: 60vh;
+  padding: 30px 120px;
 }
 
 .intro div {
@@ -110,8 +110,12 @@ header nav li {
 }
 
 .intro h1 {
-  font-size: 2.1rem;
+  font-size: 2.3rem;
   padding-bottom: 20px;
+}
+
+.intro p {
+  font-size: 0.98rem;
 }
 
 .fa-angle-down {
@@ -224,39 +228,6 @@ a.btn {
   }
 }
 
-/* about section styles */
-#about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(img/profile-pic.png) no-repeat;
-  padding: 60px 150px;
-  margin: 50px 0 0;
-}
-
-.inner-container {
-  width: 60%;
-  background-color: #fff;
-  padding: 50px;
-}
-
-.inner-container h3 {
-  font-size: 1.75rem;
-  padding-bottom: 20px;
-}
-
-@media (max-width: 900px) {
-  #about {
-    padding: 30px 10px;
-    background-image: none;
-  }
-
-  .inner-container {
-    padding: 20px;
-    width: 100%;
-  }
-}
-
 /* footer styles */
 footer {
   position: relative;
@@ -295,6 +266,12 @@ footer a {
   width: fit-content;
   padding-left: 5px;
   vertical-align: middle;
+}
+
+.pic {
+  padding-right: 5px;
+  vertical-align: middle;
+  border-radius: 50%;
 }
 
 @media (max-width: 900px) {
