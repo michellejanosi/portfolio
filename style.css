@@ -96,8 +96,17 @@ header nav li {
 }
 
 .intro div {
+  opacity: 0;
   max-width: 850px;
   padding: 110px 80px;
+  animation: 1.25s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    margin: 0;
+  }
 }
 
 .intro h1 {
