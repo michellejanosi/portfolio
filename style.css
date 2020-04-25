@@ -225,9 +225,36 @@ a.btn {
 }
 
 /* about section styles */
-.profile-pic {
-  float: left;
-  width: 200px;
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img/profile-pic.png) no-repeat;
+  padding: 60px 150px;
+  margin: 50px 0 0;
+}
+
+.inner-container {
+  width: 60%;
+  background-color: #fff;
+  padding: 50px;
+}
+
+.inner-container h3 {
+  font-size: 1.75rem;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  #about {
+    padding: 30px 10px;
+    background-image: none;
+  }
+
+  .inner-container {
+    padding: 20px;
+    width: 100%;
+  }
 }
 
 /* footer styles */
@@ -279,5 +306,4 @@ footer a {
   .footer-left {
     margin-bottom: 10px;
   }
-}
 }
