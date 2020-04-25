@@ -150,7 +150,7 @@ header nav li {
   padding-bottom: 20px;
 }
 
-.portfolio-1, .portfolio-2, .portfolio-3 {
+.portfolio-1, .portfolio-2, .portfolio-3, .portfolio-4 {
   padding: 90px 120px;
   width: 100%;
   background-size: cover;
@@ -170,6 +170,11 @@ header nav li {
   background-image: url('img/manage.png');
 }
 
+.portfolio-4 {
+  background-color: #f6e8e5;
+  background-image: url('img/fylo.png');
+}
+
 .portfolio-1 .btn, .portfolio-3 .btn {
   -webkit-font-smoothing: antialiased;
   border: none;
@@ -182,12 +187,12 @@ header nav li {
   letter-spacing: .2rem;
 }
 
-.portfolio-1 .btn:hover, .portfolio-2 .btn:hover, .portfolio-3 .btn:hover {
+.portfolio-1 .btn:hover, .portfolio-2 .btn:hover, .portfolio-3 .btn:hover, .portfolio-4 .btn:hover {
   background-color: #333;
   color: #fff;
 }
 
-.portfolio-2 .btn {
+.portfolio-2 .btn, .portfolio-4 .btn {
   -webkit-font-smoothing: antialiased;
   border: none;
   background-color: #fff;
