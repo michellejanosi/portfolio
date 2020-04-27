@@ -266,9 +266,14 @@ a.btn {
   padding: 50px 200px;
 }
 
+#about h3 {
+  font-size: 1.75rem;
+  padding-bottom: 20px;
+}
+
 .pic-profile {
   border-radius: 50%;
-  margin-bottom: 50px;
+  margin: 20px 0 50px;
 }
 
 .about-me {
