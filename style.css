@@ -223,6 +223,12 @@ a.btn {
 }
 
 /* services styles*/
+#services h2 {
+  margin: 0 auto;
+  font-size: 1.75rem;
+  padding: 70px 0 20px;
+}
+
 .grid {
   width: 100%;
   display: flex;
@@ -235,7 +241,7 @@ a.btn {
 } 
 
 #services .grid li {
-  padding: 80px;
+  padding: 60px 80px 80px;
   flex-basis: 50%;
   text-align: center;
 }
@@ -245,7 +251,7 @@ a.btn {
 }
 
 #services .grid li h3 {
-  font-size: 30px;
+  font-size: 1.25rem;
   margin: 25px 0;
 }
 
@@ -263,10 +269,10 @@ a.btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 200px;
+  padding: 70px 200px;
 }
 
-#about h3 {
+#about h2 {
   font-size: 1.75rem;
   padding-bottom: 20px;
 }
