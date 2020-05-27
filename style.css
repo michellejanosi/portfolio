@@ -287,6 +287,41 @@ a.btn {
   width: 65%;
 }
 
+/* contact form section */
+#contact-form {
+  padding: 70px;
+}
+
+#contact-form h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  padding-right: 6px;
+  /* Fixed small sizing issue on the right */
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+.container {
+  width: 30%;
+  margin: auto;
+}
+
 @media (max-width: 800px) {
   #about {
     padding: 50px;
