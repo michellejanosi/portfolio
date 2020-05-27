@@ -304,6 +304,8 @@ form {
 
 form {
   padding-right: 6px;
+  width: 20rem;
+  margin: auto;
   /* Fixed small sizing issue on the right */
 }
 
@@ -317,11 +319,6 @@ form textarea {
   height: 160px;
 }
 
-.container {
-  width: 30%;
-  margin: auto;
-}
-
 @media (max-width: 800px) {
   #about {
     padding: 50px;
@@ -331,6 +328,11 @@ form textarea {
     width: 100%;
     flex-direction: row;
   }
+
+  .container {
+  width: 30%;
+  margin: auto;
+}
 }
 
 /* footer styles */
